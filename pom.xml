@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>UnitTests</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--    Создайте новый проект Maven:-->
+    <!--    Вы можете использовать команду Maven для
+    создания нового проекта или создать его с помощью
+    IDE (например, IntelliJ IDEA или Eclipse).-->
+    <dependencies>
+        <!-- Другие зависимости -->
+        <!--        AssertJ предоставляет множество методов для
+        более сложных проверок,-->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.21.0</version> <!-- Укажите актуальную версию AssertJ -->
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.8.0</version> <!-- Укажите актуальную версию JUnit Jupiter Params -->
+            <scope>test</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.github.stefanbirkner</groupId>
+            <artifactId>system-rules</artifactId>
+            <version>1.19.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!--        Да, для использования JUnit Jupiter (JUnit 5)
+        в ваших тестах в Java необходимо добавить соответствующую
+        зависимость в файл pom.xml. JUnit Jupiter - это фреймворк
+        для написания тестов в Java.-->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.8.0</version> <!-- Укажите актуальную версию JUnit Jupiter -->
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>3.12.4</version> <!-- Укажите актуальную версию Mockito -->
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version> <!-- Замените на актуальную версию Selenium WebDriver -->
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>org.jacoco.core</artifactId>
+            <version>0.8.7</version> <!-- Укажите актуальную версию JaCoCo -->
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+
+</project>

@@ -1,0 +1,66 @@
+package lesson1.hw1.shop;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ShopTest {
+    private Shop shop;
+
+    @BeforeEach
+    void setUp() {
+        this.shop = new Shop();
+    }
+
+    @AfterEach
+    void tearDown() {
+        this.shop = null;
+
+    }
+
+    // проверка метода testSortProductsByPrice
+    @Test
+    void testSortProductsByPrice() {
+        Product product1 = new Product("Product 1", 100);
+        Product product2 = new Product("Product 2", 50);
+        Product product3 = new Product("Product 3", 75);
+
+        shop.addProduct(product3);
+        shop.addProduct(product2);
+        shop.addProduct(product1);
+
+        assertEquals(new ArrayList<Product>() {{
+            add(product2);
+            add(product3);
+            add(product1);
+        }}, shop.sortProductsByPrice());
+    }
+
+    @Test
+    public void testSortProductsByPriceEmptyList() {
+        List<Product> sortedProducts = shop.sortProductsByPrice();
+        assertTrue(sortedProducts.isEmpty());
+    }
+
+    // проверка метода GetMostExpensiveProduct()
+    @Test
+    public void testGetMostExpensiveProduct() {
+        shop.addProduct(new Product("Product 1", 100));
+        shop.addProduct(new Product("Product 2", 50));
+        shop.addProduct(new Product("Product 3", 75));
+        Product product = new Product("mostExpensive", Integer.MAX_VALUE);
+        shop.addProduct(product);
+        Product mostExpensiveProduct = shop.getMostExpensiveProduct();
+        assertEquals(mostExpensiveProduct, product);
+    }
+
+    @Test
+    public void testGetMostExpensiveProductEmptyList() {
+        assertNull(shop.getMostExpensiveProduct());
+    }
+}

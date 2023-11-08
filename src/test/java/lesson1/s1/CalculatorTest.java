@@ -1,4 +1,6 @@
-import org.example.Calculator;
+package lesson1.s1;
+
+import lesson1.s1.Calculator;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;

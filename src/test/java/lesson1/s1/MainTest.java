@@ -1,3 +1,5 @@
+package lesson1.s1;
+
 import org.junit.jupiter.api.*;
 
 import static org.junit.Assert.assertEquals;

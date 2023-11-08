@@ -1,6 +1,6 @@
-import org.junit.jupiter.api.*;
+package lesson1.s1;
 
-import java.io.Console;
+import org.junit.jupiter.api.*;
 
 import static org.junit.Assert.assertEquals;
 

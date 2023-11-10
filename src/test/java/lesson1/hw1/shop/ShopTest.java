@@ -20,7 +20,6 @@ class ShopTest {
     @AfterEach
     void tearDown() {
         this.shop = null;
-
     }
 
     // проверка метода testSortProductsByPrice
@@ -39,6 +38,12 @@ class ShopTest {
             add(product3);
             add(product1);
         }}, shop.sortProductsByPrice());
+
+//        assertIterableEquals(new ArrayList<Product>() {{ // порядок не важен в этом методе
+//            add(product2);
+//            add(product3);
+//            add(product1);
+//        }}, shop.sortProductsByPrice());
     }
 
     @Test
@@ -63,4 +68,24 @@ class ShopTest {
     public void testGetMostExpensiveProductEmptyList() {
         assertNull(shop.getMostExpensiveProduct());
     }
+
+
+//    @Test
+//    void testReverseArray() {
+//        // Создаем объект ArrayManipulator
+//        Shop.ArrayManipulator arrayManipulator = new Shop.ArrayManipulator();
+//
+//        // Создаем исходный массив
+//        int[] originalArray = {1, 2, 3, 4, 5};
+//
+//        // Вызываем метод reverseArray для переворота массива
+//        int[] reversedArray = arrayManipulator.reverseArray(originalArray);
+//
+//        // Ожидаемый результат - массив, в котором элементы перевернуты
+//        int[] expectedArray = {5, 4, 3, 2, 1};
+//
+//        // Используем assertArrayEquals для сравнения двух массивов
+//        assertArrayEquals(expectedArray, reversedArray);
+//    }
+
 }

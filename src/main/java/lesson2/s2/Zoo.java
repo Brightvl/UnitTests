@@ -1,4 +1,4 @@
-package lesson2.animals;
+package lesson2.s2;
 
 import java.util.ArrayList;
 import java.util.List;

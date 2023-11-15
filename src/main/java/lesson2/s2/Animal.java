@@ -1,4 +1,4 @@
-package lesson2.animals;
+package lesson2.s2;
 
 public class Animal {
     private String name;

@@ -1,4 +1,4 @@
-package lesson2.animals;
+package lesson2.s2;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

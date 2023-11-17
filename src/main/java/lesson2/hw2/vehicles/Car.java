@@ -28,17 +28,6 @@ public class Car extends Vehicle {
     }
 
     // getters
-    public String getCompany() {
-        return company;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public int getYearRelease() {
-        return yearRelease;
-    }
 
     public int getNumWheels() {
         return numWheels;

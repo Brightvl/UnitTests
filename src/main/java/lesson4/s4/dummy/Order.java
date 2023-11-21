@@ -1,4 +1,4 @@
-package lesson4.dummy;
+package lesson4.s4.dummy;
 
 public class Order {
 

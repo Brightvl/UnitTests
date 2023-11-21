@@ -1,5 +1,7 @@
 package lesson4.dummy;
 
+import lesson4.s4.dummy.Order;
+import lesson4.s4.dummy.OrderProcessor;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

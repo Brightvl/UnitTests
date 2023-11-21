@@ -1,5 +1,8 @@
 package lesson4.stub;
 
+import lesson4.s4.stub.Calculator;
+import lesson4.s4.stub.CurrencyConverter;
+import lesson4.s4.stub.CurrencyConverterStub;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

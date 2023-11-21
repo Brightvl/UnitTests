@@ -1,4 +1,4 @@
-package lesson4.stub;
+package lesson4.s4.stub;
 
 public class Calculator {
     private CurrencyConverter currencyConverter;

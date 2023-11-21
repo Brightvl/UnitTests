@@ -1,6 +1,4 @@
-package lesson4.mock;
-
-import org.mockito.Mockito;
+package lesson4.s4.mock;
 
 public class EmailSenderMock implements EmailSender {
     private String lastRecipient;

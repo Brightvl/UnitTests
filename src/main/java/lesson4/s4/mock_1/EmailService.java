@@ -1,4 +1,4 @@
-package lesson4.mock_1;
+package lesson4.s4.mock_1;
 
 public class EmailService {
     private EmailSender emailSender;

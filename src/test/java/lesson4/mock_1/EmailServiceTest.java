@@ -1,5 +1,7 @@
 package lesson4.mock_1;
 
+import lesson4.s4.mock_1.EmailSender;
+import lesson4.s4.mock_1.EmailService;
 import org.junit.jupiter.api.Test;
 import static org.mockito.Mockito.*;
 

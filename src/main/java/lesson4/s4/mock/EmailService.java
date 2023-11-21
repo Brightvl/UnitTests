@@ -1,4 +1,4 @@
-package lesson4.mock;
+package lesson4.s4.mock;
 
 public class EmailService {
 

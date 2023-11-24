@@ -1,5 +1,8 @@
 package lesson5.task_2;
 
+import lesson5.s5.task_2.User;
+import lesson5.s5.task_2.UserRepository;
+import lesson5.s5.task_2.UserService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

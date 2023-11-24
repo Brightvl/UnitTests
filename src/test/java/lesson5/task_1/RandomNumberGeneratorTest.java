@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static lesson5.task_1.RandomNumberGenerator.generateRandomNumbers;
+import static lesson5.s5.task_1.RandomNumberGenerator.generateRandomNumbers;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RandomNumberGeneratorTest {

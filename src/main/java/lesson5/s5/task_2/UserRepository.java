@@ -1,4 +1,4 @@
-package lesson5.task_2;
+package lesson5.s5.task_2;
 
 // Класс UserRepository
 public class UserRepository {

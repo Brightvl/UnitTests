@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.util.Arrays;
 import java.util.List;
 
-import static lesson5.task_1.MaxNumberFinder.findMaxNumber;
+import static lesson5.s5.task_1.MaxNumberFinder.findMaxNumber;
 import static org.junit.Assert.assertEquals;
 
 class MaxNumberFinderTest {
